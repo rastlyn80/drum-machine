@@ -1,5 +1,6 @@
 import React from "react";
 import DrumPad from "./DrumPad";
+import Display from "./Display";
 import {
   SOUND_1,
   SOUND_2,
@@ -28,6 +29,7 @@ class App extends React.Component {
             <DrumPad sound={SOUND_8} />
             <DrumPad sound={SOUND_9} />
           </div>
+          <Display />
         </div>
       </div>
     );

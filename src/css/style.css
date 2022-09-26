@@ -34,6 +34,7 @@ body {
   background-color: var(--prussian-blue);
   border: 5px solid var(--rich-black-fogra-29);
   margin: auto;
+  display: flex;
 }
 
 .buttons {
@@ -57,4 +58,14 @@ body {
   background-color: var(--mikado-yellow);
   color: var(--oxford-blue);
   box-shadow: 5px 7px var(--shadow-grey);
+}
+
+#display {
+  border-radius: 10px;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+  background-color: var(--rich-black-fogra-29);
+  margin: 12px auto;
+  border: 1px solid var(--my-grey);
 }
