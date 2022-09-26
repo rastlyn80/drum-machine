@@ -1,0 +1,60 @@
+:root {
+  --rich-black-fogra-29: #000814ff;
+  --oxford-blue: #001d3dff;
+  --prussian-blue: #003566ff;
+  --mikado-yellow: #ffc300ff;
+  --gold-web-golden: #ffd60aff;
+  --my-grey: #cccccc;
+  --shadow-grey: #777777;
+}
+
+body {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  background-color: var(--my-grey);
+  color: var(--oxford);
+}
+
+.container {
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine {
+  border-radius: 20px;
+  height: 400px;
+  width: 660px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--prussian-blue);
+  border: 5px solid var(--rich-black-fogra-29);
+  margin: auto;
+}
+
+.buttons {
+  height: 100%;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 20px;
+}
+
+.drum-pad {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  background-color: var(--mikado-yellow);
+  color: var(--oxford-blue);
+  box-shadow: 5px 7px var(--shadow-grey);
+}
