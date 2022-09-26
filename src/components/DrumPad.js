@@ -11,6 +11,12 @@ class DrumPad extends React.Component {
         id={this.props.sound.id}
         onClick={this.showprops}
       >
+        <audio
+          className="clip"
+          id={this.props.sound.key}
+          src={this.props.sound.src}
+        ></audio>
+
         {this.props.sound.key}
       </div>
     );
