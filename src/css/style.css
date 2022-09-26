@@ -70,9 +70,11 @@ body {
   width: 230px;
   border-radius: 10px;
   text-align: center;
+  line-height: 80px;
   background-color: var(--rich-black-fogra-29);
   margin: 35px auto;
   border: 1px solid var(--my-grey);
+  color: whitesmoke;
 }
 
 .credits {

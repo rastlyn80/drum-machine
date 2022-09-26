@@ -2,25 +2,27 @@ import React from "react";
 
 class DrumPad extends React.Component {
   componentDidMount() {
-    document.addEventListener(
-      "keydown",
+    const element = document;
+    element.addEventListener(
+      "keypress",
       (event) => {
-        var name = event.key;
+        console.log(event.key);
         if (event.key.toUpperCase() === this.props.sound.key) this.clickedPad();
       },
       false
     );
   }
 
-  clickedPad = () => {
-    document.getElementById(this.props.sound.key).play();
+  handleClick = () => {
+    this.props.clickedPad(this.props.sound.key, this.props.sound.name);
   };
+
   render() {
     return (
       <div
         className="drum-pad"
         id={this.props.sound.id}
-        onClick={this.clickedPad}
+        onClick={this.handleClick}
       >
         <audio
           className="clip"

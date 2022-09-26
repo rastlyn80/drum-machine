@@ -5,7 +5,7 @@ class Display extends React.Component {
   render() {
     return (
       <div className="right-panel">
-        <div id="display">DISPLAY</div>
+        <div id="display">{this.props.sample}</div>
         <Credits />
       </div>
     );
