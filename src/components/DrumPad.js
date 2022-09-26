@@ -8,7 +8,7 @@ class DrumPad extends React.Component {
     return (
       <div
         className="drum-pad"
-        id={this.props.sound.key}
+        id={this.props.sound.id}
         onClick={this.showprops}
       >
         {this.props.sound.key}
