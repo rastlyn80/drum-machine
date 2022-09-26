@@ -6,8 +6,8 @@ class DrumPad extends React.Component {
     element.addEventListener(
       "keypress",
       (event) => {
-        console.log(event.key);
-        if (event.key.toUpperCase() === this.props.sound.key) this.clickedPad();
+        if (event.key.toUpperCase() === this.props.sound.key)
+          this.handleClick();
       },
       false
     );
