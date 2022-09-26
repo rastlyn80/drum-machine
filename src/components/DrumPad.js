@@ -1,15 +1,15 @@
 import React from "react";
 
 class DrumPad extends React.Component {
-  showprops = () => {
-    console.log(this.props.sound.key);
+  clickedPad = () => {
+    document.getElementById(this.props.sound.key).play();
   };
   render() {
     return (
       <div
         className="drum-pad"
         id={this.props.sound.id}
-        onClick={this.showprops}
+        onClick={this.clickedPad}
       >
         <audio
           className="clip"
